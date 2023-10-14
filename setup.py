@@ -397,7 +397,7 @@ def install_tools():
 def config_files():
     choice = input("Do you want to copy my config files (y/n): ")
     if choice == "y" or choice == "Y":
-        os.system(f"cp -r{current_path}/wallpapers {home}/Pictures/")
+        os.system(f"cp -r {current_path}/wallpapers {home}/Pictures/")
         os.system(f"cp -r {current_path}/nvim/ {home}/.config")
         os.system(f"cp -r {current_path}/.bashrc {home}")
         os.system(f"cp -r {current_path}/fonts/'Fira Code' /usr/share/fonts/truetype")
