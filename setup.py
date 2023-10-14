@@ -383,6 +383,14 @@ def install_tools():
     os.chdir(current_path)
     os.system("clear")
 
+    # Seclists : Wordlist
+    print(f"Download {GREEN}Seclists{NC} wordlists")
+    os.mkdir("/usr/share/wordlists")
+    os.chdir("/usr/share/wordlists")
+    os.system("git clone https://github.com/danielmiessler/SecLists.git")
+    os.system("clear")
+    os.chdir(current_path)
+
 
 def config_files():
     choice = input("Do you want to copy my config files (y/n): ")
