@@ -64,7 +64,7 @@ def install_tools():
     # Some of the apps which is available in the apt repository of Ubuntu
     os.system("curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh")
     os.system(f'source "{home}/.cargo/env"')
-    apps = "bless adb python3-pip curl dnsrecon gobuster python3-impacket nbtscan nikto onesixtyone redis-tools smbclient smbmap snmp sslscan sipvicious whatweb wkhtmltopdf libimage-exiftool-perl golang-go python3-ldap3 python3-yaml ldnsutils strace dnsutils yersinia dhcpstarv steghide protobuf-compiler httrack ruby libglib2.0-dev openvpn sqlmap hashcat software-properties-common ffuf liblzma-dev patch hping3 libcurl4-openssl-dev make zlib1g-dev gawk g++ gcc libreadline6-dev libssl-dev libyaml-dev liblzma-dev autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config ruby-bundler ruby-dev libsqlite3-dev sqlite3 libfuse2 libfuse3-3"
+    apps = "bless adb python3-pip curl dnsrecon gobuster python3-impacket nbtscan nikto onesixtyone redis-tools smbclient smbmap snmp sslscan sipvicious whatweb wkhtmltopdf libimage-exiftool-perl golang-go python3-ldap3 python3-yaml ldnsutils strace dnsutils yersinia dhcpstarv steghide protobuf-compiler httrack ruby libglib2.0-dev openvpn sqlmap hashcat software-properties-common ffuf liblzma-dev patch hping3 libcurl4-openssl-dev make zlib1g-dev gawk g++ gcc libreadline6-dev libssl-dev libyaml-dev liblzma-dev autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config ruby-bundler ruby-dev libsqlite3-dev sqlite3 libfuse2 libfuse3-3 nmap john wireshark ncat"
     apps_list = apps.split(" ")
     for app in apps_list:
         os.system(f"apt-get install {app} -y")
@@ -394,7 +394,7 @@ def install_tools():
 
 def config_files():
     choice = input("Do you want to copy my config files (y/n): ")
-    if choice is "y" or choice is "Y":
+    if choice == "y" or choice == "Y":
         os.system(f"cp -r{current_path}/wallpapers {home}/Pictures/")
         os.system(f"cp -r {current_path}/nvim/ {home}/.config")
         os.system(f"cp -r {current_path}/.bashrc {home}")
