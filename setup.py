@@ -235,7 +235,7 @@ def install_tools():
         f"Installing {GREEN}theHarvester{NC} : OSINT Tools for E-mails, subdomains and names"
     )
     os.system("git clone https://github.com/laramies/theHarvester")
-    os.chdir(f"{tools_path}theHarvester")
+    os.chdir(f"{tools_path}/theHarvester")
     os.system("python3 -m pip install -r requirements.txt")
     os.system(f"ln -s {tools_path}/theHarvester/theHarvester.py /usr/bin/theHarvester")
     os.chdir(tools_path)
@@ -244,7 +244,7 @@ def install_tools():
     # Photon : OSINT crawler
     print(f"Installing {GREEN}Photon{NC} : OSINT Crawler")
     os.system("git clone https://github.com/s0md3v/Photon")
-    os.chdir(f"{tools_path}Photon")
+    os.chdir(f"{tools_path}/Photon")
     os.system(f"python3 -m pip install -r requirements.txt")
     os.system(f"chmod +x {tools_path}/Photon/photon.py")
     os.chdir(tools_path)
@@ -257,7 +257,7 @@ def install_tools():
     os.system("git clone https://github.com/Moham3dRiahi/Th3inspector.git")
     os.chdir(f"{tools_path}/Th3inspector")
     os.system(f"chmod +x {tools_path}/Th3inspector/install.sh")
-    os.system(f"{tools_path}Th3inspector/install.sh")
+    os.system(f"sudo {tools_path}/Th3inspector/install.sh")
     os.chdir(tools_path)
     os.system("clear")
 
@@ -268,6 +268,8 @@ def install_tools():
     os.system(f"chmod +x {tools_path}/ReconDog/dog")
     os.system(f"ln -s {tools_path}/ReconDog/dog /usr/bin/recondog")
     os.chdir(tools_path)
+    os.system("clear")
+
     # PSPY  :Monitor linux processes without root permissions
     print(
         f"Installing {GREEN}PSPY{NC}  :Monitor linux processes without root permissions"
