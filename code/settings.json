@@ -1,0 +1,209 @@
+{
+  // Workbench Settings
+  "workbench.colorTheme": "Vitesse Black",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "symbols",
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": false,
+  "workbench.editor.enablePreview": false,
+  "breadcrumbs.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "window.menuBarVisibility": "compact",
+  "window.zoomLevel": -0.5,
+  "workbench.layoutControl.enabled": false,
+  // Editor and Terminal Settings
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.fontWeight": "normal",
+  "editor.colorDecorators": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.linkedEditing": true,
+  "editor.lineNumbers": "off",
+  "editor.lightbulb.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.wordWrap": "on",
+  "editor.smoothScrolling": true,
+  "explorer.sortOrder": "type",
+  "editor.tabSize": 2,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "files.autoSave": "afterDelay",
+  "files.trimFinalNewlines": true,
+  // Files and Search
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "search.exclude": {
+    "**/vendor/{[^l],?[^ai]}*": true,
+    "**/public/{[^i],?[^n]}*": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/_ide_helper.php": true,
+    "**/composer.lock": true,
+    "**/package-lock.json": true,
+    "storage": true,
+    ".phpunit.result.cache": true
+  },
+  // Typography
+  "terminal.integrated.fontFamily": "'FiraCode NF', sanserif",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 2.5,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1.5,
+  "editor.fontFamily": "FiraCode NF, Maple Mono NF,MonoLisa,dank mono,monaco, monospace",
+  "debug.console.fontFamily": "FiraCode NF,monaco,monospace",
+  "errorLens.fontFamily": "FiraCode NF,monaco,monospace",
+  "importCost.fontStyle": "italic",
+  "errorLens.fontStyleItalic": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  // JavaScript
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  // Markdown
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  // Go
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.defaultFormatter": "golang.go"
+  },
+  // Lua
+  "[lua]": {
+    "editor.quickSuggestions": {
+      "comments": "inline",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.semanticHighlighting.enabled": true,
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  // Python
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "python.languageServer": "Pylance",
+  // Git
+  "git.autofetch": true,
+  "git.smartCommitChanges": "all",
+  "git.enableSmartCommit": true,
+  "git.branchSortOrder": "alphabetically",
+  // Extensions
+  // Tailwind
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.hg/**"
+  ],
+  "tailwindCSS.emmetCompletions": true,
+  // Color Highlight
+  "color-highlight.enable": true,
+  "color-highlight.markerType": "background",
+  "color-highlight.languages": [
+    "*"
+  ],
+  // Symbols
+  "symbols.hidesExplorerArrows": false,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "gutterpreview.showImagePreviewOnGutter": true,
+  "workbench.statusBar.visible": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.cursorStyle": "line-thin",
+  "amVim.startInInsertMode": true,
+  "amVim.useSystemClipboard": true
+}
